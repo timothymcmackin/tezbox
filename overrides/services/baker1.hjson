@@ -1,0 +1,24 @@
+{
+    "restart_max_retries": 0,
+    "user": "tezos",
+    "stop_timeout": 300,
+    "executable": "octez-baker-PsParisC",
+    "restart_delay": 20,
+    "environment": {
+        "HOME": "/tezbox/data",
+        "TEZOS_LOG": "* -> info"
+    },
+    "restart": "always",
+    "args": [
+    "run",
+    "with",
+    "local",
+    "node",
+    "/tezbox/data/.tezos-node1",
+    "baker1",
+    "--votefile",
+    "/tezbox/context/protocols/PsParisC/vote-file.json",
+    "--dal-node",
+    "http://127.0.0.1:10732"
+]
+}

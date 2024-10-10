@@ -1,0 +1,19 @@
+{
+    "user": "tezos",
+    "stop_timeout": 300,
+    "restart_delay": 20,
+    "executable": "octez-dal-node",
+    "restart": "always",
+    "environment": {
+        "HOME": "/tezbox/data",
+        "TEZOS_LOG": "* -> info"
+    },
+    "args": [
+        "run",
+        "--endpoint",
+        "http://127.0.0.1:8733",
+        "--producer-profiles=0",
+        "--public-addr=0.0.0.0:10733"
+    ],
+    "output": "file:/log/dal.log"
+}

@@ -1,0 +1,22 @@
+{
+    "user": "tezos",
+    "stop_timeout": 300,
+    "executable": "octez-node",
+    "restart_delay": 20,
+    "environment": {
+        "HOME": "/tezbox/data",
+        "TEZOS_LOG": "* -> info"
+    },
+    "restart": "always",
+    "args": [
+        "run",
+        "--rpc-addr=0.0.0.0:8733",
+        "--rpc-addr=0.0.0.0:20001",
+        "--allow-all-rpc=0.0.0.0",
+        "--metadata-size-limit=unlimited",
+        "--synchronisation-threshold=0",
+        "--no-bootstrap-peers",
+        "--peer=localhost:9733",
+        "--private-mode"
+    ]
+}
