@@ -15,7 +15,12 @@ ENV TEZBOX_USER=tezos
 ENV HOME=/tezbox/data
 
 # dal scripts need curl
-RUN apk add curl
+RUN sudo apk add curl
+
+# Data dirs for services
+RUN mkdir -p /tezbox/data/.tezos-node1
+RUN mkdir -p /tezbox/data/.tezos-node2
+RUN mkdir -p /tezbox/data/.tezos-node3
 
 RUN printf '#!/bin/sh\n\
 if [ -z "$GITHUB_TOKEN" ]; then\n\
