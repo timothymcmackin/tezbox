@@ -21,6 +21,9 @@ RUN sudo apk add curl
 RUN mkdir -p /tezbox/data/.tezos-node1
 RUN mkdir -p /tezbox/data/.tezos-node2
 RUN mkdir -p /tezbox/data/.tezos-node3
+RUN mkdir -p /tezbox/data/node1
+RUN mkdir -p /tezbox/data/node2
+RUN mkdir -p /tezbox/data/node3
 
 RUN printf '#!/bin/sh\n\
 if [ -z "$GITHUB_TOKEN" ]; then\n\

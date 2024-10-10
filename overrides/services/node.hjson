@@ -4,7 +4,7 @@
     "executable": "octez-node",
     "restart_delay": 20,
     "environment": {
-        "HOME": "/tezbox/data",
+        "HOME": "/tezbox/data/node1",
         "TEZOS_LOG": "* -> info"
     },
     "restart": "always",
@@ -17,6 +17,7 @@
         "--synchronisation-threshold=0",
         "--no-bootstrap-peers",
         "--peer=localhost:9732",
-        "--private-mode"
+        "--private-mode",
+        "--net-addr=0.0.0.0:9733"
     ]
 }
