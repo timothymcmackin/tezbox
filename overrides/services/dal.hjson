@@ -15,7 +15,7 @@
         "--producer-profiles=0",
         "--public-addr=0.0.0.0:10735",
         "--net-addr=0.0.0.0:11735",
-        "--data-dir=/tezbox/data/.tezos-dal-1"
+        "--data-dir=/tezbox/data/dal1"
     ],
     "output": "file:/log/dal.log"
 }

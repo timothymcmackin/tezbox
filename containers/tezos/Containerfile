@@ -18,12 +18,15 @@ ENV HOME=/tezbox/data
 RUN sudo apk add curl
 
 # Data dirs for services
+RUN mkdir -p /tezbox/data/baker1
+RUN mkdir -p /tezbox/data/baker2
+RUN mkdir -p /tezbox/data/baker3
 RUN mkdir -p /tezbox/data/.tezos-node1
 RUN mkdir -p /tezbox/data/.tezos-node2
 RUN mkdir -p /tezbox/data/.tezos-node3
-RUN mkdir -p /tezbox/data/node1
-RUN mkdir -p /tezbox/data/node2
-RUN mkdir -p /tezbox/data/node3
+RUN mkdir -p /tezbox/data/dal1
+RUN mkdir -p /tezbox/data/dal2
+RUN mkdir -p /tezbox/data/dal3
 
 RUN printf '#!/bin/sh\n\
 if [ -z "$GITHUB_TOKEN" ]; then\n\

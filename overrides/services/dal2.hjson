@@ -13,9 +13,9 @@
         "--endpoint",
         "http://127.0.0.1:8733",
         "--producer-profiles=0",
-        "--public-addr=0.0.0.0:10733",
-        "--net-addr=0.0.0.0:11733",
-        "--data-dir=/tezbox/data/.tezos-dal-2"
+        "--public-addr=0.0.0.0:10736",
+        "--net-addr=0.0.0.0:11736",
+        "--data-dir=/tezbox/data/dal2"
     ],
     "output": "file:/log/dal.log"
 }

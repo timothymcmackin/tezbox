@@ -19,6 +19,6 @@
     "--votefile",
     "/tezbox/context/protocols/PsParisC/vote-file.json",
     "--dal-node",
-    "http://127.0.0.1:10733"
+    "http://127.0.0.1:10736"
 ]
 }
